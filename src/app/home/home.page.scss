@@ -1,0 +1,95 @@
+
+.ion-padding {
+  --padding-start: 0;
+  --background: white;
+}
+
+.container {
+  position: absolute;
+  bottom: 25px;
+  width: 100%;
+  padding: 10px;
+}
+
+.displayResult {
+  font-size: xxx-large;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.301);
+  color: black;
+  text-align: end;
+}
+
+.button {
+  width: 25%;
+  margin: 0px;
+  height: 90px;
+  --background: white;
+  color: black;
+  font-size: xx-large;
+  --box-shadow: none;
+}
+
+ion-title{
+  text-align: center;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+
+.nb_btn{
+  --background: #e0e0e0;
+}
+
+ion-button{
+  padding: 3px;
+}
+
+.toolbar-title-default{
+  --background: #1e9ff2;
+}
+
+.action_btn {
+  color: orange;
+  --background: #424242 !important;
+}
+
+.result_btn {
+  --background: #28d094 !important;
+  color: white;
+  font-weight: bold;
+}
+
+@media (max-width: 280px) {
+  .button {
+    font-size: large;
+    height: 65px;
+  }
+  .displayResult {
+    font-size: xx-large;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 400px) {
+  .button {
+    height: 50px;
+    font-size: large;
+  }
+  .displayResult {
+    font-size: xx-large;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 800px) {
+  .result_btn {
+    --border-radius: 50%;
+    width: 20%;
+    margin-left: 3%;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1000px) {
+  .result_btn {
+    --border-radius: 50%;
+    width: 18%;
+    margin-left: 3%;
+  }
+}

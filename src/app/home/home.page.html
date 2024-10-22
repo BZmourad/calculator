@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Calculator
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" [fullscreen]="true">
+
+  <div class="container">
+      <div class="row displayResult">
+        <span>{{display}}</span>
+      </div>
+
+      <div class="row">
+        <ion-button class="action_btn" (click)="clearDisplay()">AC</ion-button>
+        <ion-button class="action_btn" (click)="clearDisplay()">C</ion-button>
+        <ion-button class="action_btn" (click)="backspace()"><ion-icon name="arrow-back-outline"></ion-icon></ion-button>
+        <ion-button class="action_btn" (click)="appendToDisplay('/')">/</ion-button>
+      </div>
+
+      <div class="row">
+        <ion-button class="nb_btn" (click)="appendToDisplay('7')">7</ion-button>
+        <ion-button class="nb_btn" (click)="appendToDisplay('8')">8</ion-button>
+        <ion-button class="nb_btn" (click)="appendToDisplay('9')">9</ion-button>
+        <ion-button class="action_btn" (click)="appendToDisplay('*')"><ion-icon name="close-outline"></ion-icon></ion-button>
+      </div>
+
+      <div class="row">
+        <ion-button class="nb_btn" (click)="appendToDisplay('4')">4</ion-button>
+        <ion-button class="nb_btn" (click)="appendToDisplay('5')">5</ion-button>
+        <ion-button class="nb_btn" (click)="appendToDisplay('6')">6</ion-button>
+        <ion-button class="action_btn" (click)="appendToDisplay('-')"><ion-icon name="remove-outline"
+          aria-hidden="true"></ion-icon></ion-button>
+
+      </div>
+      <div class="row">
+        <ion-button class="nb_btn" (click)="appendToDisplay('1')">1</ion-button>
+        <ion-button class="nb_btn" (click)="appendToDisplay('2')">2</ion-button>
+        <ion-button class="nb_btn" (click)="appendToDisplay('3')">3</ion-button>
+        <ion-button class="action_btn" (click)="appendToDisplay('+')">+</ion-button>
+
+      </div>
+
+      <div class="row">
+        <ion-button class="nb_btn" (click)="appendToDisplay('00')">00</ion-button>
+        <ion-button class="nb_btn" (click)="appendToDisplay('0')">0</ion-button>
+        <ion-button class="nb_btn" (click)="appendToDisplay('.')">.</ion-button>
+        <ion-button class="action_btn result_btn" (click)="calculate()"><ion-icon name="reorder-two-outline"></ion-icon></ion-button>
+      </div>
+
+  </div>
+</ion-content>
